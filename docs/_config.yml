@@ -4,9 +4,10 @@ kramdown:
 
 baseurl: "/logo"
 layouts_dir: ".shared/layout"
+includes_dir: ".shared/includes"
 
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "vendor"]
-include: [".shared"]
+safe: true
 
 repository: amphp/logo
 gems:
@@ -20,4 +21,4 @@ defaults:
    values:
      layout: "docs"
 
-asset_path: "/logo/.shared/asset"
+shared_asset_path: "/logo/asset"
